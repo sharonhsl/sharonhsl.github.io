@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sharon Lam, design systems engineer</title>
+  <meta name="description" content="Sharon Lam — design systems engineer in Chicago. Component libraries, tokens, and accessibility.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <a id="skip" href="#main">Skip to content</a>
+
+  <div class="page">
+    <div class="container">
+
+      <header class="header">
+        <img class="header__avatar"
+             src="images/profile.jpg"
+             alt="Portrait of Sharon Lam in a white shirt, in front of large green leaves."
+             width="640" height="640">
+        <div class="header__body">
+          <div class="header__title-row">
+            <h1>Sharon Lam</h1>
+            <div class="theme-toggle">
+              <button id="theme-toggle" class="btn" type="button" aria-label="Cycle colour theme">
+                Theme: <span id="theme-label">auto</span>
+              </button>
+            </div>
+          </div>
+          <p class="header__tagline">Design systems engineer in Chicago</p>
+          <ul class="profile-links" aria-label="Profiles" role="list">
+            <li><a href="https://github.com/sharonhslhk">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/sharonhslam">LinkedIn</a></li>
+          </ul>
+          <p id="theme-announcement" role="status" class="sr-only"></p>
+        </div>
+      </header>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <main id="main" tabindex="-1" style="outline-offset:8px">
+
+        <section class="section" aria-labelledby="practice-heading">
+          <div class="section__badge-row"><span class="badge">About</span></div>
+          <h2 id="practice-heading" class="narrow">What kind of engineer I am</h2>
+          <div class="prose">
+            <p>Design systems is a frontend specialty that sits between design, product, and every other engineering team. I ship the pieces features are made of: components, tokens, documentation, and the release pipeline that gets them into a dozen repositories without breaking anything.</p>
+            <p>The work is invisible when it goes well. A component I redesign might show up in any environment, so a good decision quietly pays off for years, and a bad one is expensive to undo. Most of the job is thinking it through carefully and writing down why.</p>
+          </div>
+
+          <div class="skills-block">
+            <h3 class="eyebrow">Skills</h3>
+            <ul class="skills" aria-label="Skills and tools" role="list">
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Web accessibility</li>
+              <li>Storybook.js</li>
+              <li>Tailwind</li>
+              <li>d3.js</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <section class="section" aria-labelledby="now-heading">
+          <div class="section__badge-row"><span class="badge">Craft</span></div>
+          <h2 id="now-heading">What I'm working on</h2>
+          <div class="craft">
+            <article aria-labelledby="truncation-heading">
+              <h3 id="truncation-heading" class="eyebrow">Middle truncation in CSS</h3>
+              <div class="craft__body">
+                <p class="lead">One day at work I got frustrated at how inaccessible current solutions are for displaying middle truncation on browser, so I started writing an CSS explainer draft to get it into the CSS-overflow-4 standards. I hope soon browsers will have native support for it!</p>
+                <p class="body">Today this takes JavaScript measurement hacks. They're slow, they break with bidirectional text, and screen readers end up announcing the shortened string instead of the real one. It should be a two line CSS declaration.</p>
+              </div>
+            </article>
+            <article aria-labelledby="dayjob-heading">
+              <h3 id="dayjob-heading" class="eyebrow">The day job</h3>
+              <p class="craft__intro">Evolving the component library at The Trade Desk:</p>
+              <ul class="craft__list" role="list">
+                <li><span class="dash" aria-hidden="true">&mdash;</span><p>Architect accessible and performant components to meet WCAG and WAI-ARIA guidelines</p></li>
+                <li><span class="dash" aria-hidden="true">&mdash;</span><p>Standardize documentation and coding conventions to control the quality of work produced from AI-assisted workflows</p></li>
+                <li><span class="dash" aria-hidden="true">&mdash;</span><p>Improve support case velocity by cultivating a contribution culture in cross-functional teams</p></li>
+                <li><span class="dash" aria-hidden="true">&mdash;</span><p>Champion design systems and drive adoption across the organization</p></li>
+                <li><span class="dash" aria-hidden="true">&mdash;</span><p>Own the versioning and CICD pipeline of foundational frontend packages</p></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <section class="section" aria-labelledby="background-heading">
+          <div class="section__badge-row" aria-hidden="true"><span class="badge">Background</span></div>
+          <h2 id="background-heading">Background</h2>
+          <dl class="background">
+            <div class="background__row">
+              <dt>2023&ndash;present</dt>
+              <dd>
+                <h3>The Trade Desk</h3>
+                <p>Component library for design systems.</p>
+              </dd>
+            </div>
+            <div class="background__row">
+              <dt>2019&ndash;2021</dt>
+              <dd>
+                <h3>Credit Suisse, Hong Kong</h3>
+                <p>Trading compliance tooling for APAC markets.</p>
+              </dd>
+            </div>
+            <div class="background__row">
+              <dt>Education</dt>
+              <dd>
+                <p class="emphasize">MS in Computer Science, University of Illinois Urbana-Champaign.<br>BEng in Computer Science, The Hong Kong University of Science and Technology.</p>
+              </dd>
+            </div>
+            <div class="background__row">
+              <dt>Publications</dt>
+              <dd class="stack">
+                <p class="emphasize">NeurIPS 2020: a scalable approximation algorithm for fair clustering.</p>
+                <p class="emphasize">SOUPS 2022: privacy tooling for cookie collection awareness.</p>
+              </dd>
+            </div>
+            <div class="background__row">
+              <dt>Teaching</dt>
+              <dd>
+                <p class="emphasize">Computer graphics and intro computing at UIUC.</p>
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <section class="section" aria-labelledby="outside-heading">
+          <div class="section__badge-row"><span class="badge">Outside work</span></div>
+          <h2 id="outside-heading">Away from the keyboard</h2>
+          <p class="outside__intro">I picked up the harp when I was in grad school because I needed a quieter instrument (I used to play the Trombone) to practice on. When I travel I like to do something a little bit scary.</p>
+          <div class="gallery">
+            <figure class="harp">
+              <img src="images/harp.jpg"
+                   alt="Sharon standing at a concert grand harp in a showroom full of harps, testing the strings."
+                   width="1536" height="2048" loading="lazy" decoding="async">
+              <figcaption>Trying out an Ebony Style 100 harp at the Lyon and Healy harp factory in Chicago, the one and only pedal harp maker in the US.</figcaption>
+            </figure>
+            <figure class="paraglide">
+              <img src="images/paraglide.jpg"
+                   alt="Sharon grinning in a helmet and sunglasses while paragliding above green forest, clouds and ocean below."
+                   width="1538" height="2048" loading="lazy" decoding="async">
+              <figcaption>Paragliding in Maui in a beautiful sunny morning.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>
