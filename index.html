@@ -4,205 +4,173 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sharon Lam, design systems engineer</title>
+  <title>Sharon Lam, frontend engineer</title>
   <meta name="description"
-    content="Sharon Lam — design systems engineer in Chicago. Component libraries, tokens, and accessibility.">
+    content="Sharon Lam — frontend engineer in Chicago. Component libraries, React state management, performance, and accessibility.">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Sharon Lam, design systems engineer">
+  <meta property="og:title" content="Sharon Lam, frontend engineer">
   <meta property="og:description"
-    content="Design systems engineer in Chicago. Component libraries, tokens, and accessibility.">
+    content="Frontend engineer in Chicago. Component libraries, React state management, performance, and accessibility.">
   <meta property="og:url" content="https://sharonhsl.github.io/">
   <meta property="og:image" content="https://sharonhsl.github.io/images/profile.jpg">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sharon Lam, design systems engineer">
+  <meta name="twitter:title" content="Sharon Lam, frontend engineer">
   <meta name="twitter:description"
-    content="Design systems engineer in Chicago. Component libraries, tokens, and accessibility.">
+    content="Frontend engineer in Chicago. Component libraries, React state management, performance, and accessibility.">
   <meta name="twitter:image" content="https://sharonhsl.github.io/images/profile.jpg">
 
   <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b5fff'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='system-ui,sans-serif' font-size='38' font-weight='700' fill='white'%3ESL%3C/text%3E%3C/svg%3E">
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237A5980'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='36' font-weight='600' fill='%23FFFEFD'%3ESL%3C/text%3E%3C/svg%3E">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="theme.js"></script>
 </head>
 
 <body>
-  <a id="skip" href="#main">Skip to content</a>
-
   <div class="page">
-    <div class="container">
 
-      <header class="header">
-        <img class="header__avatar" src="images/profile.jpg"
-          alt="Portrait of Sharon Lam in a white shirt, in front of large green leaves." width="640" height="640">
-        <div class="header__body">
-          <div class="header__title-row">
-            <h1>Sharon Lam</h1>
-            <div class="theme-toggle">
-              <button id="theme-toggle" class="btn" type="button" aria-label="Cycle colour theme">
-                Theme: <span id="theme-label">auto</span>
-              </button>
-            </div>
-          </div>
-          <p class="header__tagline">Design systems engineer in Chicago</p>
-          <ul class="profile-links" aria-label="Profiles" role="list">
-            <li><a href="https://github.com/sharonhsl">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/sharon-lam-hslhk/">LinkedIn</a></li>
-          </ul>
-          <p id="theme-announcement" role="status" class="sr-only"></p>
-        </div>
-      </header>
+    <header class="intro">
+      <p class="intro__cat" title="mrrp" aria-hidden="true">₍^. ̫ .^₎</p>
+      <h1 class="intro__name">Sharon Lam</h1>
+      <p class="intro__role">Frontend Engineer&nbsp; &mdash;&nbsp; Chicago, IL</p>
+      <p class="intro__blurb">Hi strangers, I am a software engineer at The Trade Desk maintaining our internal
+        component library. In my day-to-day, I think about React.js state management, performance, and accessibility a
+        lot. Outside of work, I'm working on putting middle truncation into CSS standard. I also play the harp for
+        fun.</p>
+      <div class="intro__actions">
+        <a class="btn" href="files/sharon-lam-resume.pdf" download="Sharon Lam Resume.pdf">Download r&eacute;sum&eacute;
+          <span aria-hidden="true">&darr;</span></a>
+        <a href="mailto:sharonhslhk@gmail.com">say hi</a>
+        <a href="https://linkedin.com/in/sharon-lam-hslhk">linkedin</a>
+      </div>
+    </header>
 
-      <div class="divider" aria-hidden="true"></div>
+    <p class="divider" aria-hidden="true">&middot; &middot; &middot;</p>
 
-      <main id="main" tabindex="-1" style="outline-offset:8px">
+    <main id="main">
 
-        <section class="section" aria-labelledby="practice-heading">
-          <div class="section__badge-row"><span class="badge">About</span></div>
-          <h2 id="practice-heading" class="narrow">What kind of engineer I am</h2>
-          <div class="prose">
-            <p>Design systems is a frontend specialty that sits between design, product, and every other engineering
-              team. I ship the foundational engineering pieces of a design systems: components, tokens, documentation,
-              and I own the release strategy and pipeline that publish them. Maintaining a component library naturally
-              pushes me to care about accessibility, performance, and interface design at once, which is exactly the
-              work I want to be doing.</p>
-          </div>
+      <section aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading">Timeline</h2>
+        <ol class="timeline" role="list">
+          <li class="timeline__row">
+            <span class="timeline__when">Apr 2025 &mdash; now</span>
+            <span class="timeline__what">
+              <span class="timeline__title">Software Engineer II</span>
+              <span class="timeline__where">The Trade Desk &middot; design systems &amp; component library</span>
+            </span>
+          </li>
+          <li class="timeline__row">
+            <span class="timeline__when">Jul 2023 &mdash; Mar 2025</span>
+            <span class="timeline__what">
+              <span class="timeline__title">Software Engineer I</span>
+              <span class="timeline__where">The Trade Desk</span>
+            </span>
+          </li>
+          <li class="timeline__row">
+            <span class="timeline__when">2021 &mdash; 2023</span>
+            <span class="timeline__what">
+              <span class="timeline__title">M.S., Computer Science</span>
+              <span class="timeline__where">University of Illinois Urbana-Champaign</span>
+            </span>
+          </li>
+          <li class="timeline__row">
+            <span class="timeline__when">Summer 2022</span>
+            <span class="timeline__what">
+              <span class="timeline__title">Software Engineering Intern</span>
+              <span class="timeline__where">The Trade Desk</span>
+            </span>
+          </li>
+          <li class="timeline__row">
+            <span class="timeline__when">2020 &mdash; 2021</span>
+            <span class="timeline__what">
+              <span class="timeline__title">Technology Analyst</span>
+              <span class="timeline__where">Credit Suisse (Hong Kong)</span>
+            </span>
+          </li>
+          <li class="timeline__row">
+            <span class="timeline__when">Summer 2019</span>
+            <span class="timeline__what">
+              <span class="timeline__title">Summer Technology Analyst</span>
+              <span class="timeline__where">Credit Suisse (Hong Kong)</span>
+            </span>
+          </li>
+          <li class="timeline__row">
+            <span class="timeline__when">2017 &mdash; 2018</span>
+            <span class="timeline__what">
+              <span class="timeline__title">IT Placement Student</span>
+              <span class="timeline__where">Hong Kong Monetary Authority</span>
+            </span>
+          </li>
+          <li class="timeline__row">
+            <span class="timeline__when">2015 &mdash; 2020</span>
+            <span class="timeline__what">
+              <span class="timeline__title">B.Eng., Computer Science</span>
+              <span class="timeline__where">Hong Kong University of Science and Technology</span>
+            </span>
+          </li>
+        </ol>
+      </section>
 
-          <div class="skills-block">
-            <h3 class="eyebrow">Skills</h3>
-            <ul class="skills" aria-label="Skills and tools" role="list">
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Web accessibility</li>
-              <li>Storybook.js</li>
-              <li>Tailwind</li>
-            </ul>
-          </div>
-        </section>
+      <p class="divider" aria-hidden="true">&middot; &middot; &middot;</p>
 
-        <div class="divider" aria-hidden="true"></div>
-
-        <section class="section" aria-labelledby="now-heading">
-          <div class="section__badge-row"><span class="badge">Craft</span></div>
-          <h2 id="now-heading">What I'm working on</h2>
-          <div class="craft">
-            <article aria-labelledby="truncation-heading">
-              <h3 id="truncation-heading" class="eyebrow">Middle truncation in CSS</h3>
-              <div class="craft__body">
-                <p class="lead">One day at work I got frustrated at how inaccessible middle truncations are displayed on
-                  browser, so I started writing an CSS explainer draft to get it into the CSS-overflow-4 standards.
-                  I hope soon browsers will have native support for it!</p>
-                <p class="body">Middle truncation is quite important for showing technical data like URL or filenames in
-                  a tight column, where the beginning and end are equally important for users tell items apart. Today
-                  we're still using JavaScript to achieve middle truncation. These solutions break
-                  with bidirectional text, and screen readers end up announcing the shortened string instead of the
-                  actual one if aria labelling is not taken care of. Having browser native support will address
-                  accessibility and performance issues all at once.</p>
-                <p class="body"><a href="https://sharonhsl.github.io/CSS-overflow-4-middle-truncation/">Demo</a>
-                  &middot; <a href="https://github.com/sharonhsl/CSS-overflow-4-middle-truncation">GitHub</a></p>
-              </div>
+      <section aria-labelledby="work-heading">
+        <h2 id="work-heading">Projects &amp; publications</h2>
+        <ul class="cards" role="list">
+          <li>
+            <article class="card" aria-labelledby="card-truncation">
+              <h3 class="card__title" id="card-truncation">Middle Truncation CSS Explainer</h3>
+              <p class="card__meta">2026 &middot; co-authored with Sebastian Zartner (CSSWG invited expert)</p>
+              <p class="card__body">A formal explainer for middle truncation in CSS, reviving a proposal stalled since
+                2012 &mdash; accepted by the CSS Working Group for inclusion in the spec. Includes a reference polyfill
+                handling bidirectional text and a cross-browser interoperability study.</p>
+              <p class="card__links">
+                <a href="https://github.com/w3c/csswg-drafts/blob/main/css-overflow-5/middle-truncation.md">spec <span
+                    aria-hidden="true">&#8599;</span></a>
+                <a href="https://sharonhsl.github.io/CSS-overflow-4-middle-truncation/">polyfill demo <span
+                    aria-hidden="true">&#8599;</span></a>
+              </p>
             </article>
-            <article aria-labelledby="dayjob-heading">
-              <h3 id="dayjob-heading" class="eyebrow">The day job</h3>
-              <p class="craft__intro">Evolving the component library at The Trade Desk:</p>
-              <ul class="craft__list" role="list">
-                <li><span class="dash" aria-hidden="true">&mdash;</span>
-                  <p>Architect accessible and performant components to meet WCAG and WAI-ARIA guidelines</p>
-                </li>
-                <li><span class="dash" aria-hidden="true">&mdash;</span>
-                  <p>Standardize documentation and coding conventions to control the quality of work produced from
-                    AI-assisted workflows</p>
-                </li>
-                <li><span class="dash" aria-hidden="true">&mdash;</span>
-                  <p>Improve support case velocity by cultivating a contribution culture in cross-functional teams</p>
-                </li>
-                <li><span class="dash" aria-hidden="true">&mdash;</span>
-                  <p>Champion design systems and drive adoption across the organization</p>
-                </li>
-                <li><span class="dash" aria-hidden="true">&mdash;</span>
-                  <p>Own the versioning and CICD pipeline of foundational frontend packages</p>
-                </li>
-              </ul>
+          </li>
+          <li>
+            <article class="card" aria-labelledby="card-crumbl">
+              <h3 class="card__title" id="card-crumbl">Crumbl &mdash; cookie collection awareness tool</h3>
+              <p class="card__meta">SOUPS 2022 &middot; Chiang, Lam, Zhang, Chandrasekharan</p>
+              <p class="card__body">An awareness-enhancing tool that makes browser cookie collection visible and
+                understandable.</p>
+              <p class="card__links">
+                <a href="https://www.usenix.org/conference/soups2022/presentation/chiang-poster">poster <span
+                    aria-hidden="true">&#8599;</span></a>
+                <a href="https://github.com/sharonhsl/crumbl">github <span aria-hidden="true">&#8599;</span></a>
+              </p>
             </article>
-          </div>
-        </section>
+          </li>
+          <li>
+            <article class="card" aria-labelledby="card-kfc">
+              <h3 class="card__title" id="card-kfc">KFC: A Scalable Approximation Algorithm for k-center Fair
+                Clustering</h3>
+              <p class="card__meta">NeurIPS 2020 &middot; Harb, Lam</p>
+              <p class="card__body">A fair clustering algorithm on the k-center objective.</p>
+              <p class="card__links">
+                <a href="https://arxiv.org/abs/2010.13949">paper <span aria-hidden="true">&#8599;</span></a>
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
 
-        <div class="divider" aria-hidden="true"></div>
+    </main>
 
-        <section class="section" aria-labelledby="background-heading">
-          <div class="section__badge-row" aria-hidden="true"><span class="badge">Background</span></div>
-          <h2 id="background-heading">Background</h2>
-          <dl class="background">
-            <div class="background__row">
-              <dt>2023&ndash;present</dt>
-              <dd>
-                <h3>The Trade Desk</h3>
-                <p>Component library for design systems.</p>
-              </dd>
-            </div>
-            <div class="background__row">
-              <dt>2019&ndash;2021</dt>
-              <dd>
-                <h3>Credit Suisse, Hong Kong</h3>
-                <p>Trading compliance tooling for APAC markets.</p>
-              </dd>
-            </div>
-            <div class="background__row">
-              <dt>Education</dt>
-              <dd>
-                <p class="emphasize">MS in Computer Science, University of Illinois Urbana-Champaign.<br>BEng in
-                  Computer Science, The Hong Kong University of Science and Technology.</p>
-              </dd>
-            </div>
-            <div class="background__row">
-              <dt>Publications</dt>
-              <dd class="stack">
-                <p class="emphasize">SOUPS 2022. Crumbl: An awareness enhancing tool for cookie collection. Yi-Shyuan
-                  Chiang, Sharon Lam, Xingjian Zhang.</p>
-                <p class="emphasize">NeurIPS 2020. KFC: A Scalable Approximation Algorithm for k-center Fair
-                  Clustering. <a href="https://farouky.github.io/">Elfarouk Harb</a>, Sharon Lam.</p>
-              </dd>
-            </div>
-            <div class="background__row">
-              <dt>Teaching</dt>
-              <dd>
-                <p class="emphasize">CS418 Interactive Computer Graphics and CS105 Intro Computing at UIUC.</p>
-              </dd>
-            </div>
-          </dl>
-        </section>
+    <footer class="footer">
+      <span class="footer__tail" aria-hidden="true">&int;</span>
+      <span>thanks for stopping by &mdash; mind the cat hair.</span>
+    </footer>
 
-        <div class="divider" aria-hidden="true"></div>
-
-        <section class="section" aria-labelledby="outside-heading">
-          <div class="section__badge-row"><span class="badge">Outside work</span></div>
-          <h2 id="outside-heading">Away from the keyboard</h2>
-          <p class="outside__intro">I picked up the harp when I was in grad school because I needed a quieter instrument
-            (I used to play the Trombone) to practice on. When I travel I like to do something a little bit scary.</p>
-          <div class="gallery">
-            <figure class="harp">
-              <img src="images/harp.jpg"
-                alt="Sharon standing at a concert grand harp in a showroom full of harps, testing the strings."
-                width="1536" height="2048" loading="lazy" decoding="async">
-              <figcaption>Trying out an Ebony Style 100 harp at the Lyon and Healy harp factory in Chicago, the one and
-                only pedal harp maker in the US.</figcaption>
-            </figure>
-            <figure class="paraglide">
-              <img src="images/paraglide.jpg"
-                alt="Sharon grinning in a helmet and sunglasses while paragliding above green forest, clouds and ocean below."
-                width="1538" height="2048" loading="lazy" decoding="async">
-              <figcaption>Paragliding in Maui in a beautiful sunny morning.</figcaption>
-            </figure>
-          </div>
-        </section>
-
-      </main>
-
-    </div>
   </div>
 </body>
 
